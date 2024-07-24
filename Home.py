@@ -23,7 +23,7 @@ theme_plotly = None
 load_df = pd.read_excel('coordinates.xlsx')
 
  #logo
-st.sidebar.image("logo1.png",caption="")
+st.sidebar.image("logo.png",caption="")
  
 name=st.sidebar.multiselect(
     "SELECT OFFICE",
@@ -35,14 +35,14 @@ df=load_df.query("Name==@name ")
 #load dataset
 
 try:
- st.header("BUSINESS TRENDS BY GEO-REFERENCING ")
+ st.header("City Investment Map")
  items= load_df['Name'].count()
- total_price= float(load_df['TotalPrice'].sum())
+ total_price= int(load_df['TotalPrice'].sum())
 
  with st.expander("ANALYTICS"):
   a1,a2=st.columns(2)
-  a1.metric(label="Office Branches",value=items,help=f""" Total Price: {total_price} """,delta=total_price)
-  a2.metric(label="Total Price",value=total_price,help=f""" Total Price: {total_price} """,delta=total_price)
+  a1.metric(label="Number of Investment Profiles",value=items,help=f""" Total Price: {total_price} """)
+  a2.metric(label="Total Investment Value",value=total_price,help=f""" Total Price: {total_price} """)
   style_metric_cards(background_color="#FFFFFF",border_left_color="#00462F",border_color="#070505",box_shadow="#F71938")
 #filter
 
