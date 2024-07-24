@@ -97,7 +97,7 @@ try:
 
   m.add_child(folium.LayerControl(collapsed=False))
   #folium_static(m, width=1350, height=600)
-  folium_static(m, width=1350, height=600)
+  folium_static(m, width=950, height=600)
   folium.LayerControl().add_to(m)  # Add layer control to toggle different layers
 
  # Show table data when hovering over a marker
