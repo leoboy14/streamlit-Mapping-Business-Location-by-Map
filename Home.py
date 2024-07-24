@@ -57,13 +57,13 @@ try:
       <h3>Information of {row['Name']}</h3>
       <hr class'bg-danger text-primary'>
       <div style='width:400px;height:200px;margin:10px;color:gray;text-size:18px;'>
-      <li class="list-group-item"><b>Branch Manager:</b> {row['Manager']}</li>
-      <li class="list-group-item"><b>Collection:</b> {row['Collection']} USD<br></li>
-      <li class="list-group-item"><b>Name:</b> {row['Name']}<br></li>
-      <li class="list-group-item"><b>Quantity:</b> {row['Quantity']}<br></li>
-      <li class="list-group-item"><b>Unit Price:</b> {row['UnitPrice']}<br></li>
-      <li class="list-group-item"><h4>Total Price:  {row['TotalPrice']} USD</b><br></li>
-      <li class="list-group-item"><h4>Phone {row['Phone']}</h4></li>"""
+      <li class="list-group-item"><b>Project Lead:</b> {row['Manager']}</li>
+      <li class="list-group-item"><b>Information:</b> {row['Collection']} USD<br></li>
+      <li class="list-group-item"><b>Project Name:</b> {row['Name']}<br></li>
+      <li class="list-group-item"><b>Description:</b> {row['Quantity']}<br></li>
+      <li class="list-group-item"><b>Amount:</b> {row['UnitPrice']}<br></li>
+      <li class="list-group-item"><h4>Total Investment:  {row['TotalPrice']} USD</b><br></li>
+      <li class="list-group-item"><h4>Contact Number {row['Phone']}</h4></li>"""
     folium.Marker(
         location=[row['Latitude'], row['Longitude']],
         tooltip=row['Name'],
