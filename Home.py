@@ -92,7 +92,7 @@ try:
    
     return m
 
- with st.expander("OFFICE MAP VIEW & ANALYTICS"):
+ with st.expander("PROFILE MAP VIEW & ANALYTICS"):
   m = add_google_maps(m)
 
   m.add_child(folium.LayerControl(collapsed=False))
