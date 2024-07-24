@@ -26,7 +26,7 @@ load_df = pd.read_excel('coordinates.xlsx')
 st.sidebar.image("logo.png",caption="")
  
 name=st.sidebar.multiselect(
-    "SELECT OFFICE",
+    "SELECT INVESTMENT PROFILE",
      options=load_df["Name"].unique(),
      default=load_df["Name"].unique(),
     )
