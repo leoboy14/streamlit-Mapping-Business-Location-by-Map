@@ -12,7 +12,7 @@ from streamlit_extras.metric_cards import style_metric_cards
 #pip install streamlit-folium
 
 #set width
-st.set_page_config(page_title="Tutorials", page_icon="📈", layout="wide")  
+st.set_page_config(page_title="City Investment Map", page_icon="📈", layout="wide")  
 
 # load Style css
 with open('style.css')as f:
