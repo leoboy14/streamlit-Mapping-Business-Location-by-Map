@@ -47,7 +47,7 @@ try:
 #filter
 
 #create a map
- m = folium.Map(location=[df['Latitude'].mean(), df['Longitude'].mean()], zoom_start=4)
+ m = folium.Map(location=[df['Latitude'].mean(), df['Longitude'].mean()], zoom_start=12)
 
  marker_cluster = MarkerCluster().add_to(m)
  for i, row in df.iterrows():
