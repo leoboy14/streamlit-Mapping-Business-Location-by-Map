@@ -101,7 +101,7 @@ try:
   folium.LayerControl().add_to(m)  # Add layer control to toggle different layers
 
  # Show table data when hovering over a marker
- with st.expander("SELECT DATA"):
+ with st.expander("PROFILE DETAILS"):
   selected_city = st.selectbox("Select a city", df['Name'])
   selected_row = df[df['Name'] == selected_city].squeeze()
   # Display additional information in a table
